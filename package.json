@@ -1,0 +1,23 @@
+{
+  "name": "contentful-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "env-cmd npx tsx ./node_modules/.bin/contentful-migration-tool run ./migrations",
+    "create-migration": "npx tsx ./src/create.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "contentful-cli": "^3.3.1",
+    "contentful-migration": "^4.20.2",
+    "contentful-migration-tool": "^1.3.0",
+    "tsx": "^4.11.0"
+  }
+}
